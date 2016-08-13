@@ -1,5 +1,5 @@
 function showMenu() {
-    document.getElementbyId("myDropDown").classList.toggle("show");
+    document.getElementById("myDropDown").classList.toggle("show");
 }
 
 window.onclick = function(event) {
