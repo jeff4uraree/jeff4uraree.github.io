@@ -8,20 +8,51 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <!-- Add simple styling, will move this to css file later -->
+  <style>
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .bg-1 {
+
+  }
+
+  .bg-2 {
+    background-color: #474e5d;
+    color: #ffffff;
+  }
+
+  .bg-3 {
+
+  }
+
+  .bg-4 {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .contact-me-label {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  </style>
+
   <!-- Add a container for the side nav bar -->
 
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
+    <div>
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Geoffrey</a>
       </div>
       <ul class="nav navbar-nav">
         <li class"active"><a href="index.html">About</a></li>
-        <li class="dropdown"><a class="dropdown-toogle" data-toggle="dropdown" href="#">Projects
+        <li class="dropdown"><a class="dropdown-toogle" data-toggle="dropdown" href="projects.html">Projects
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Web</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="projectsWeb.html">Web</a></li>
+            <li><a href="projectsGames.html">Games</a></li>
           </ul>
         </li>
 
@@ -31,41 +62,44 @@
 
 <body>
   <!--  Template for about page -->
-  <div id="aboutMe" class="container-fluid text-center">
-    <h1>ABOUT ME</h1>
-    <img src="img/coverPhotoGeoffrey.JPG" class="img-circle">
-    <p>This is my first webpage</p>
-    <p>Page still under construction!! </p>
+  <div id="aboutMe" class="container-fluid bg-1 text-center">
+    <h1>About Me</h1>
+    <img src="img/coverPhotoGeoffrey.JPG" class="img-circle" href="">
   </div>
 
   <!-- Self Description -->
-  <div id="selfDescription" class="container-fluid text-center">
+  <div id="selfDescription" class="container-fluid bg-2 text-center">
     <h3>Who Am I?</h3>
-    <p>Hi!  My name is Geoffrey.  I am a recent graduate of computer engineering program at UofT.  I have worked as an creator of automated testing suites for several companies.  I am also a budding
+    <p>Hi!  My name is Geoffrey Li.  I am a recent graduate of computer engineering program at UofT.  I have worked as an creator of automated testing suites for several companies.  I am also a budding
     web developer, starting to experiment creating simple and intuitive static and dynamic websites.</p>
   </div>
 
   <!-- Companies that I have worked at -->
-  <div id="workedAtCompanies" class="container-fluid text-center">
+  <div id="workedAtCompanies" class="container-fluid bg-3 text-center">
     <h3></h3>
     <div class="row">
       <div class="col-sm-4">
-        <p>Paymentus</p>
-        <img src="img/paymentusLogo.jpeg">
+        <h3>Paymentus</h3>
+        <p>At Paymentus, I helped design an automated testing suite to follow best practices such as the use of page object models.  I designed testcases for testing non browser aspects of paymentus services such as Interactive voice reponse (IVR solutions) and
+        testing rest api functionality. </p>
+        <a href="https://www.paymentus.com/"><img src="img/paymentusLogo.jpeg"></a>
       </div>
       <div class="col-sm-4">
-        <p>Bluecat Networks</p>
-        <img src="img/blueCatLogo.png">
+        <h3>Bluecat Networks</h3>
+        <p>During my time at Bluecat, I worked as a Test Automation Engineer with Agile Scrum Teams to design, develop, and maintain the automated testing suite for Bluecats' IP Address Manager(IPAM) web tool using the web browser automation tool Selenium Webdriver.
+        I also coordinated with developers and QA engineers to identify, report and fix bugs, defects and other issues. </p>
+        <a href="https://www.bluecatnetworks.com/"><img src="img/blueCatLogo.png"></a>
       </div>
       <div class="col-sm-4">
-        <p>Celestica</p>
-        <img src="">
+        <h3>Celestica</h3>
+        <p>I worked at Celestica during my Professional Experience Year (PEY) term.  I created macros in visual basic to automate elements of electrical component analysis and report generation. </p>
+        <a href="https://www.celestica.com/home"><img src="img/celesticaLogo.jpg"></a>
       </div>
     </div>
   </div>
 
-  <div id="contactMe" class="container-fluid text-center">
-    <p>You can contact me through the following mediums</p>
+  <div id="contactMe" class="container-fluid bg-4 text-center">
+    <h1 class="contact-me-label">Contact me</h1>
 
     <table align="center">
       <tr>
